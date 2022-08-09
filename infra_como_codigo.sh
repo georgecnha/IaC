@@ -5,11 +5,9 @@ echo 'Um desafio de código do bootcamp Imersão Linux'
 echo "........................................................"
 echo "Criando grupos de usuários..."
 groupadd GRP_ADM
-echo "Grupo GRP_ADM criado"
 groupadd GRP_VEN
-echo "Grupo GRP_VEN criado"
 groupadd GRP_SEC
-echo "Grupo GRP_SEC criado"
+echo ''
 echo "==========================================================================================="
 echo ''
 echo "Criando usuários a adicionando-os aos seus respectivos grupos..."
