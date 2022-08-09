@@ -3,52 +3,34 @@
 echo "INFRAESTRUTURA COMO CÓDIGO"
 echo 'Um desafio de código do bootcamp Imersão Linux'
 echo "........................................................"
-
 echo "Criando grupos de usuários..."
-
 groupadd GRP_ADM
 echo "Grupo GRP_ADM criado"
-group GRP_VEN
+groupadd GRP_VEN
 echo "Grupo GRP_VEN criado"
 groupadd GRP_SEC
 echo "Grupo GRP_SEC criado"
 echo "==========================================================================================="
 echo ''
-
 echo "Criando usuários a adicionando-os aos seus respectivos grupos..."
 echo ''
-
-useradd carlos -m -s /bin/bash -p $(openssl passwd -crypt senha123) -G GRP_ADM
-echo 'Usuário "carlos" criado.'
-useradd maria -m -s /bin/bash -p $(openssl passwd -crypt senha123) -G GRP_VEN
-echo 'Usuário "maria" criado.'
-useradd joao -m -s /bin/bash -p $(openssl passwd -crypt senha123) -G GRP_SEC
-echo 'Usuário "joao" criado.'
-useradd debora -m -s /bin/bash -p $(openssl passwd -crypt senha123) -G GRP_ADM
-echo 'Usuário "debora" criado.'
-useradd sebastiana -m -s /bin/bash -p $(openssl passwd -crypt senha123) -G GRP_VEN
-echo 'Usuário "sebastiana" criado.'
-useradd roberto -m -s /bin/bash -p $(openssl passwd -crypt senha123) -G GRP_SEC
-echo 'Usuário "roberto" criado.'
-useradd josefino -m -s /bin/bash -p $(openssl passwd -crypt senha123) -G GRP_ADM
-echo 'Usuário "josefino" criado.'
-useradd amanda -m -s /bin/bash -p $(openssl passwd -crypt senha123) -G GRP_VEN
-echo 'Usuário "amanda" criado.'
-useradd rogerio -m -s /bin/bash -p $(openssl passwd -crypt senha123) --G GRP_SEC
-echo 'Usuário "rogerio" criado.'
+useradd carlos -m -s /bin/bash -p $(openssl passwd -crypt Senha123) -G GRP_ADM
+useradd maria -m -s /bin/bash -p $(openssl passwd -crypt Senha123) -G GRP_VEN
+useradd joao -m -s /bin/bash -p $(openssl passwd -crypt Senha123) -G GRP_SEC
+useradd debora -m -s /bin/bash -p $(openssl passwd -crypt Senha123) -G GRP_ADM
+useradd sebastiana -m -s /bin/bash -p $(openssl passwd -crypt Senha123) -G GRP_VEN
+useradd roberto -m -s /bin/bash -p $(openssl passwd -crypt Senha123) -G GRP_SEC
+useradd josefino -m -s /bin/bash -p $(openssl passwd -crypt Senha123) -G GRP_ADM
+useradd amanda -m -s /bin/bash -p $(openssl passwd -crypt Senha123) -G GRP_VEN
+useradd rogerio -m -s /bin/bash -p $(openssl passwd -crypt Senha123) -G GRP_SEC
 echo "==========================================================================================="
 echo ''
 echo "Criando pastas..."
-
 mkdir /publico
-echo 'Pasta "publico" criada.' 
 mkdir /adm
-echo 'Pasta "adm" criada.'
 mkdir /ven
-echo 'Pasta "ven" criada.'
 mkdir /sec
-echo 'Pasta "sec" criada.'  
-
+echo ''
 echo "==========================================================================================="
 echo ''
 echo "Determinando permissões das pastas..."
@@ -62,6 +44,6 @@ chmod 770 /adm
 chmod 770 /ven
 chmod 770 /sec
 echo ''
-echo "==========================INFRAESTRUTURA CRIADA COM SUCESSO======================================="
+echo "================================FIM DO SCRIPT======================================="
 
 
