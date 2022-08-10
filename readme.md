@@ -1,17 +1,17 @@
 ## Indicações
 
-Toda a estrutura e comandos utilizados nesse _script_ foram escritos para utilização no Ubuntu 22.04 recém-instalado.
+Toda a estrutura e comandos para utilização no Ubuntu 22.04 recém-instalado.
 Para que o _script_ seja executado, primeiramente deve-se logar como _root_. 
 
-## Permissões de execução do _script_
+## Permissões de execução
 
-Primeiro devem ser configuradas as permissões do _script_. Isto pode ser feito executando o seguinte comando no terminal:
+Primeiro devem ser configuradas as permissões do arquivo. Isto pode ser feito executando o seguinte comando no terminal:
 
 ```shell script
 chmod +x infra_como_codigo.sh 
 ```
 
-## Execução do script
+## Execução
 
 Para executar, basta utilizar o seguinte comando:
 
