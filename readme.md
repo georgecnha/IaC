@@ -1,6 +1,6 @@
 ## Indicações
 
-Toda a estrutura e comandos para utilização no Ubuntu 22.04 recém-instalado.
+Recomenda-se a utilização desse script inicialmente apenas no Ubuntu 22.04 recém-instalado.
 Para que o _script_ seja executado, primeiramente deve-se logar como _root_. 
 
 ## Permissões de execução
